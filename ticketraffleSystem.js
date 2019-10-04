@@ -173,9 +173,8 @@
         for (var i = 0, t = 0; i < entries.length; i++) {
             if (entries[i].equalsIgnoreCase(user)) {
                 t++;
-				if (tags.getTags().get('subscriber').equals('1') && (getTickets(user)*2+times >= trueSubMaxEntries) || (getTickets(user)*2+times >= trueRegMaxEntries))
+				if (tags.getTags().get('subscriber').equals('1') && (getTickets(user)+times >= trueSubMaxEntries) || (getTickets(user)+times >= trueRegMaxEntries))
 				{
-					$.consoleLn("A sub tried");
 					if (msgToggle) {
 						$.say($.whisperPrefix(user) + $.lang.get('ticketrafflesystem.limit.hit', maxEntries) + " and " + $.lang.get('ticketrafflesystem.ticket.usage', getTickets(user)/subTMulti));
 					}
