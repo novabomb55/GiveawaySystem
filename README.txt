@@ -1,11 +1,12 @@
 Changes made:
 
-systems-ticketraffleSystem-
+----systems-ticketraffleSystem----
 
 Added Line 40 for !amount
 Line 30 edited to show amount of tickets after entering to prevent people using 2 commands to see changes
 
-ticketraffleSystem-
+
+----ticketraffleSystem----
 
 Line 366 added !amount command. !amount does math based on sub/no sub to output the ticket amount. This currently hides multiplier
 
